@@ -1,0 +1,27 @@
+[user]
+	name = Atsushi Nagase
+	email = a@ngs.io
+	signingkey = 81B29510
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	sm = submodule
+	pullsm = submodule foreach 'git pull'
+	addorg = remote add origin
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+	pruneall = fetch --all --prune
+	cancel = reset HEAD^
+	seturl = remote set-url
+[core]
+	quotepath = false
+	ignorecase = false
+	excludesfile = ~/.gitignore
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[gpg]
+	program = /usr/bin/gpg
