@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -eu
+
+export GPG_TTY=$(tty)
