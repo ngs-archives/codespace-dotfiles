@@ -7,3 +7,4 @@ source ~/dotfiles/aliases
 source ~/dotfiles/envrc
 
 fpath=(~/.zsh $fpath)
+eval $(direnv export zsh)

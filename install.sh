@@ -18,3 +18,5 @@ for D in $(find $DIR -type d -name '.*' \( ! -name .git \)); do
         ln -s $F "${HOME}/${DN}/${FN}"
     done
 done
+
+sudo apt-get install direnv
